@@ -13,5 +13,5 @@ jobs:
       - name: Update Readme with badges
         uses: pemtajo/badge-readme@main
         with:
-          GH_TOKEN: ${{ GITHUB_TOKEN }}
-          CREDRY_USER: ${{ secret.CREDRY_USER }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CREDRY_USER: ${{ secrets.CREDRY_USER }}
