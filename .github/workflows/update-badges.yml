@@ -14,4 +14,4 @@ jobs:
         uses: pemtajo/badge-readme@main
         with:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CREDRY_USER: ${{ secrets.CREDRY_USER }}
+          CREDLY_USER: ${{ secrets.CREDLY_USER }}
