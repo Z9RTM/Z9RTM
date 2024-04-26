@@ -1,0 +1,17 @@
+name: Update Badges
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    name: Update Readme with badges
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update Readme with badges
+        uses: pemtajo/badge-readme@main
+        with:
+          GH_TOKEN: ${{ GITHUB_TOKEN }}
+          CREDRY_USER: ${{ secret.CREDRY_USER }}
